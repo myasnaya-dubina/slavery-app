@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_rounded_rectangle">
+
+            <TextView
+                android:id="@+id/apartmentPriceHeaderTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="цена квартиры или сумма ипотеки"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/apartmentPriceTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="7 800 000 р."
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apartmentPriceHeaderTextView" />
+
+            <SeekBar
+                android:id="@+id/apartmentPriceSeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apartmentPriceTextView" />
+
+            <TextView
+                android:id="@+id/bottomApartmentPriceBorder"
+                style="@style/TextPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="16dp"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apartmentPriceSeekBar" />
+
+            <TextView
+                android:id="@+id/topApartmentPriceBorder"
+                style="@style/TextPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="16dp"
+                android:text="20m"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apartmentPriceSeekBar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_rounded_rectangle"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/paymentHeaderTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="могу платить/откладывать каждый месяц"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/paymentTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="80 000 р."
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymentHeaderTextView" />
+
+            <SeekBar
+                android:id="@+id/paymentSeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymentTextView" />
+
+            <TextView
+                android:id="@+id/bottomPaymentBorder"
+                style="@style/TextPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="16dp"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymentSeekBar" />
+
+            <TextView
+                android:id="@+id/topPaymentBorder"
+                style="@style/TextPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="16dp"
+                android:text="100k"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymentSeekBar" />
+
+            <TextView
+                android:id="@+id/resultPaymentTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="откладывая, купишь в апреле 2049 года"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:background="@drawable/dark_green_rounded_rectangle"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottomPaymentBorder" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_rounded_rectangle"
+            android:layout_marginTop="16dp">
+
+
+            <TextView
+                android:id="@+id/mortgagePercentHeaderTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="процент по ипотеке"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mortgagePercentTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="9,3%"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mortgagePercentHeaderTextView" />
+
+            <SeekBar
+                android:id="@+id/mortgagePercentSeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mortgagePercentTextView" />
+
+            <TextView
+                android:id="@+id/bottomMortgagePercentBorder"
+                style="@style/TextPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="8%"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mortgagePercentSeekBar" />
+
+            <TextView
+                android:id="@+id/topMortgagePercentBorder"
+                style="@style/TextPrimaryLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="12%"
+                android:textSize="20sp"
+                android:paddingBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mortgagePercentSeekBar" />
+
+            <TextView
+                android:id="@+id/mortgageResultTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="с ипотекой расплатишься в мае 2054 года"
+                android:padding="16dp"
+                android:textSize="14sp"
+                android:background="@drawable/dark_red_rounder_rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottomMortgagePercentBorder" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yellow_rounded_rectangle"
+            android:layout_marginTop="16dp">
+
+
+            <TextView
+                android:id="@+id/calculationMethodTextView"
+                style="@style/TextPrimaryLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="как мы считаем?"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />androidx
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        -->
+
+    </LinearLayout>
+</ScrollView>

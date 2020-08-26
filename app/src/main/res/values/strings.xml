@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">slavery</string>
+    <string name="salary_view_header_text">моя зарплата до вычета НДФЛ</string>
+    <string name="taxes_view_header">Каждый месяц я плачу:</string>
+    <string name="tre">&#160;-&#160;</string>
+    <string name="tax_name_ndfl">НДФЛ</string>
+    <string name="tax_description_ndfl">налог на доходы физ лиц.</string>
+    <string name="tax_description_pension">обязательное пенсионное страхование</string>
+    <string name="tax_name_pension">пенсия</string>
+    <string name="tax_name_medicine">медицина</string>
+    <string name="tax_description_medicine">обязательное медстрахование</string>
+    <string name="tax_description_fss">фонд социального страхования</string>
+    <string name="tax_name_fss">ФСС</string>
+    <string name="taxes_view_total_header_text">ИТОГО НАЛОГОВ:</string>
+    <string name="taxes_view_salary_before_taxes">ЗАРПЛАТА ДО НАЛОГОВ:</string>
+    <string name="taxes_view_show_year">Показать за год</string>
+    <string name="number_input_dialog_cancel">Отмена</string>
+    <string name="number_input_dialog_ok">OK</string>
+    <string name="number_input_dialog_in_rubles">в рублях</string>
+    <string name="number_input_dialog_in_thousands_of_rubles">в тысячах рублей</string>
+    <string name="invalid_salary_borders_warning">Нетушки, нельзя чтобы нижняя граница была больше верхней.</string>
+    <string name="bottom_nav_apt_title">Квартира</string>
+    <string name="bottom_nav_taxes_title">Налоги</string>
+    <string name="mortgage_percent_header">в процентах</string>
+</resources>

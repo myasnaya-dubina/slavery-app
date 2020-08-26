@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        applicationId "ru.tzkt.slavery"
+
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+
+        versionCode globalConfiguration.versionCode
+        versionName globalConfiguration.versionName
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation(
+            deps.arch.lifecycle,
+            deps.support.app_compat,
+            deps.support.cardview,
+            deps.support.design,
+            deps.support.preferences,
+
+            // ui
+            deps.ui.constraint_layout,
+            deps.ui.rating,
+
+            deps.retrofit.gson
+    )
+}
+
+repositories {
+    mavenCentral()
+}

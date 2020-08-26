@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
+    <style name="TextPrimaryLight" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TextPrimaryDark" parent="TextPrimaryLight">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextSecondaryDark" parent="TextPrimaryDark">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+    </style>
+
+    <style name="TextHeaderDark" parent="TextPrimaryDark">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SingleTaxView">
+        <attr name="taxName" format="string" />
+        <attr name="taxDescription" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TotalAmountView">
+        <attr name="headerText" format="string" />
+    </declare-styleable>
+</resources>

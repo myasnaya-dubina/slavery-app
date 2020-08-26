@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dashTextView"
+        style="@style/TextHeaderDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/tre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taxNameTextView"
+        style="@style/TextHeaderDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/dashTextView"
+        app:layout_constraintStart_toEndOf="@id/dashTextView"
+        app:layout_constraintTop_toTopOf="@id/dashTextView"
+        tools:text="НДФЛ" />
+
+    <TextView
+        android:id="@+id/descriptionTaxNameTextView"
+        style="@style/TextSecondaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/taxNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/taxNameTextView"
+        tools:text="Налог на доходы физ.лиц" />
+
+    <TextView
+        android:id="@+id/taxSumTextView"
+        style="@style/TextHeaderDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/descriptionTaxNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dashTextView"
+        tools:text="13 000 р." />
+</merge>
